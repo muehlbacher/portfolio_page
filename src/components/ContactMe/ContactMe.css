@@ -4,7 +4,7 @@
   padding: 40px 60px 10px 30px;
   margin: 50px 50px 30px 50px;
   position: relative;
-  background: #0c0122;
+  background: var(--color-background);
   border-radius: 20px;
 }
 
@@ -12,9 +12,11 @@
   z-index: 200 !important;
   position: relative !important;
 }
+
 .contact-title {
   margin-bottom: 30px;
 }
+
 .contact-title h2 {
   font-size: 15px;
   text-transform: uppercase;
@@ -23,6 +25,7 @@
   margin-bottom: 20px;
   color: var(--color-title);
 }
+
 .contact-title h3 {
   font-size: 2.2rem;
   text-transform: uppercase;
@@ -31,6 +34,7 @@
 
   margin-bottom: 40px;
 }
+
 .contact-row {
   display: flex;
   align-items: flex-start;
@@ -45,13 +49,16 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .work-togather-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
+
 .work-togather-text p {
   font-size: 14px;
 }
+
 .form-input-one {
   width: 100%;
   height: 60px;
@@ -66,15 +73,18 @@
   padding: 12px 30px;
   box-shadow: none;
 }
+
 .footer-social {
   display: flex;
   align-items: center;
 }
+
 .footer-social span {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 15px !important;
 }
+
 .footer-social ul {
   text-decoration: none;
   list-style: none;
@@ -83,10 +93,12 @@
   display: flex;
   align-items: center;
 }
+
 .footer-social ul li {
   margin-left: 15px;
   display: flex !important;
 }
+
 .footer-social ul li a {
   margin-right: 15px;
 }
@@ -110,13 +122,16 @@
   position: relative;
   z-index: 1;
 }
+
 .icon-name {
   color: #ffffff !important;
   font-size: 14px;
 }
+
 .d-name {
   color: #cacaca !important;
 }
+
 .icon-cont {
   background: rgba(82, 95, 165, 0.1);
   width: 60px;
@@ -130,9 +145,11 @@
   align-items: center;
   font-size: 1.5rem;
 }
+
 .contact-info {
   text-align: left !important;
 }
+
 .contact-info h4 {
   margin-bottom: 10px;
   font-size: 16px;
@@ -155,17 +172,21 @@
     padding-left: 0px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .contact-me2 .contact-title {
     text-align: center;
   }
+
   .work-togather-form {
     margin-bottom: 20px;
   }
+
   .work-togather-form-btn {
     float: right;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .contact-me2 {
     margin: 20px;
@@ -176,19 +197,24 @@
   .sec-btn {
     margin-top: 10px;
   }
+
   .contact-info {
     margin-bottom: 0px;
   }
+
   .contact-me2 {
     padding: 30px 20px;
     background: #0c0122;
   }
+
   .work-togather-text h2 {
     font-size: 1.5rem;
   }
+
   .work-togather-form {
     margin-bottom: 0px;
   }
+
   .work-togather-form input {
     height: 55px;
   }
@@ -198,9 +224,11 @@
 .light .contact-me2 {
   background: rgb(255, 255, 255);
 }
+
 .light .contact-info {
   color: #10161b !important;
 }
+
 .light .sec-btn {
   background: var(--btn-background);
 }
@@ -208,13 +236,16 @@
 .light .contact-details p {
   color: #242424 !important;
 }
+
 .light .contact-details h4 {
   color: #000000 !important;
 }
+
 .light .footer-social i {
   background: var(--btn-background) !important;
   color: #fff;
 }
+
 .light .form-input-one {
   background: #ebebeb;
 }

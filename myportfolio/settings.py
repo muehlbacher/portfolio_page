@@ -12,17 +12,19 @@ import os
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-SECRET_KEY = 'django-insecure-*#ds*1+$+q+i*@@0#^-um=yi*-yztmy8yc8fbv@z0%9!*3^lnu'
+SECRET_KEY = 'django-insecure-*#ds*1+$+q+i*@@0#^-um=yi*-yztmy8yc8fbv@z0%9!*'
 
 DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
-
 ]
-
+## (replace the string below with your own site URL):
+CSRF_TRUSTED_ORIGINS = ['https://dominikmuehlbacher.at']
+#    'localhost', '127.0.0.1', 'dominikmuehlbacher.at'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -88,6 +90,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+
     }
 }
 

@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    environment:
+      SECRET_KEY: 'django-insecure-*#ds*1+$+q+i*@@0#^-um=yi*-yztmy8yc8fbv@z0%9!*'
+      DATABASE_URL: sqlite:///db.sqlite3
+    volumes:
+      - .:/app
+    ports:
+      - "1603:1603"
+    command: sh -c "python manage.py runserver 0.0.0.0:1603"

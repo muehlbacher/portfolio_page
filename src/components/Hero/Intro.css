@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=VT323");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600&display=swap");
+
 .intro-page {
   position: relative;
   z-index: 2;
 }
+
 .intro-page::after {
   content: "";
-  background-image: url("/src/images/decoration/background.png");
+  /* background-image: url("/src/images/decoration/background.png"); */
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -17,8 +21,10 @@
   z-index: -1;
   opacity: 0.2;
 }
+
 .small-intro {
   opacity: 0.9 !important;
+  height: 100vh;
 }
 
 .decor-dot2 {
@@ -26,6 +32,7 @@
   top: 150px;
   left: 40%;
 }
+
 .text-animate {
   display: inline-block;
   animation: bounceIn 1s 1s;
@@ -41,9 +48,12 @@
 .intro-container {
   width: 100%;
 }
+
 .intro-name {
   font-family: "Jost", sans-serif !important;
+
 }
+
 .intro-row {
   display: flex !important;
   align-items: center;
@@ -55,27 +65,33 @@
   flex-wrap: wrap;
   justify-content: space-evenly !important;
 }
+
 .intro-img {
   width: 80%;
   border-radius: 10px;
   z-index: 50;
   margin-right: 0px !important;
 }
+
 .ff {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .intro-name {
   color: var(--color-info-light);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .hello {
   font-size: 17px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   margin-bottom: 10px;
-  font-weight: 800;
+  font-weight: 500;
   color: var(--white);
   background: var(--color-special-color);
   -webkit-background-clip: text;
@@ -86,6 +102,7 @@
 .intro-left {
   padding: 30px 0;
 }
+
 .intro-left .name {
   font-size: 4rem;
   margin-bottom: 15px;
@@ -93,23 +110,28 @@
 }
 
 .intro-left .job {
-  font-size: 4rem;
+  font-family: "Source Code Pro";
+  font-size: 7rem;
   margin-bottom: 20px !important;
-  font-weight: 800 !important;
-  color: var(--white);
+  font-weight: 200 !important;
+  color: var(--color-gold);
   background: var(--color-button);
+  /* background: var(--color-hero-name); */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
 }
+
 .intro-left p {
   margin-bottom: 50px;
   line-height: 1.9em;
   font-weight: 300;
   font-size: 15px;
 }
+
 .small-intro {
   padding: 0 30px;
 }
+
 .intro-left .myinfo {
   font-size: 15px;
   font-weight: 400 !important;
@@ -119,6 +141,7 @@
   font-size: 16px;
   font-family: "Rubik", sans-serif !important;
 }
+
 .intro-btns button {
   height: 60px;
   width: 180px;
@@ -133,6 +156,7 @@
   border: 1px solid var(--color-title);
   background: transparent;
 }
+
 .intro-left .intro-btns .contact-me {
   margin-right: 30px;
   border: none;
@@ -141,12 +165,15 @@
   background: var(--color-button);
   transition: all 0.5s ease;
 }
+
 .intro-btns a:hover {
   color: var(--color-dark) !important;
 }
+
 .intro-btns .my-cv {
   transition: all 0.5s ease;
 }
+
 .intro-btns .my-cv:hover {
   color: var(--color-dark);
   background: var(--color-white);
@@ -155,41 +182,50 @@
 .intro-btns .contact-me:hover {
   background: var(--color-button-hover) !important;
 }
+
 .intro-left .intro-links {
   display: flex;
   margin-top: 40px;
 }
+
 .intro-btns .contact-me {
   position: relative;
 }
+
 .intro-btns .contact-me i {
   position: absolute;
   right: 30px;
   top: 24px;
 }
+
 .intro-btns .my-cv {
   position: relative;
 }
+
 .intro-btns .my-cv i {
   position: absolute;
   font-size: 18px;
   right: 25px;
   top: 20px;
 }
-.icon-link {
-}
+
+.icon-link {}
+
 .intro-contact span {
   color: #d6d6d6 !important;
   font-size: 15px;
 }
+
 .intro-contact ul li {
   display: flex;
 }
+
 .intro-contact ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .intro-left .icon-link i {
   margin-right: 10px;
   margin-top: 10px;
@@ -217,11 +253,13 @@
   width: 100%;
   height: 100%;
 }
+
 .parcol {
   position: absolute !important;
   left: 0;
   bottom: 0;
 }
+
 #tsparticles {
   position: absolute;
   left: 0;
@@ -229,13 +267,16 @@
   width: 100%;
   height: 100vh;
 }
+
 .left-img {
   position: relative;
 }
 
 .intro-name {
   position: relative;
+  display: block;
 }
+
 .intro-links {
   position: absolute;
   top: 270px !important;
@@ -260,24 +301,27 @@
   margin: 10px 10px;
   right: 0 !important;
 }
-.fa-facebook {
-}
+
+.fa-facebook {}
 
 .intro-contact {
   display: flex;
   /* align-items: ; */
   flex-direction: column;
 }
+
 .intro-links a {
   text-decoration: none;
   list-style: none;
 }
+
 .intro-links i:hover {
   background: rgb(236, 197, 113);
   border-radius: 7px;
 
   color: var(--color-dark);
 }
+
 .intro-links h6 {
   display: flex;
   justify-content: center;
@@ -285,9 +329,11 @@
   padding: 0 !important;
   margin: 0 !important;
 }
+
 .intro-contact {
   margin-top: 50px;
 }
+
 @media only screen and (min-width: 2560px) {
   .intro-img {
     width: 40%;
@@ -300,20 +346,25 @@
     margin-bottom: 10px;
     height: 60px !important;
   }
+
   .intro-left .job {
     font-size: 3rem;
   }
+
   .intro-left .name {
     font-size: 3rem;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .intro-img {
     width: 120% !important;
   }
+
   h3 {
     width: 100% !important;
   }
+
   .intro-row {
     padding: 50px 0 !important;
     margin-top: 60px !important;
@@ -323,42 +374,52 @@
     font-size: 2rem !important;
     margin-bottom: 10px;
   }
+
   .hello {
     font-size: 12px !important;
   }
+
   .job {
     font-size: 3rem !important;
   }
+
   .myinfo {
     font-size: 14px !important;
   }
+
   .intro-btns button {
     width: 150px !important;
     height: 50px !important;
   }
+
   .intro-btns .contact-me i {
     right: 20px;
     top: 20px;
   }
+
   .intro-btns .my-cv i {
     right: 16px;
     top: 16px;
   }
+
   .intro-links i {
     width: 30px;
     height: 30px;
     font-size: 12px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .intro-page {
     padding-top: 20px !important;
     text-align: center;
     padding-bottom: 20px;
   }
+
   .intro-row {
     padding: 0 !important;
   }
+
   .intro-img {
     width: 45% !important;
   }
@@ -368,6 +429,7 @@
     height: 45px;
   }
 }
+
 @media only screen and (max-width: 625px) {
   .intro-page {
     text-align: center;
@@ -376,40 +438,50 @@
   .myinfo {
     text-align: center !important;
   }
+
   .job {
     text-align: center;
     font-size: 2.5rem !important;
   }
+
   .intro-img {
     width: 55% !important;
   }
-  .intro-btns .contact-me {
-  }
+
+  .intro-btns .contact-me {}
 }
+
 @media only screen and (max-width: 425px) {
   .intro-img {
     width: 100% !important;
   }
+
   .intro-left {
     padding: 0 !important;
   }
+
   .intro-contact span {
     display: none;
   }
+
   .intro-btns button {
     width: 160px !important;
   }
+
   .intro-btns .contact-me {
     margin-left: 0 !important;
   }
+
   .myinfo {
     margin-bottom: 30px;
   }
-  .contact-me {
-  }
+
+  .contact-me {}
+
   .intro-btns {
     margin-left: 40px;
   }
+
   .intro-contact {
     margin-top: 10px;
     display: flex;
@@ -418,17 +490,19 @@
     align-items: center;
   }
 }
+
 @media only screen and (max-width: 420px) {
   .intro-btns .contact-me {
     margin-right: 0 !important;
   }
+
   .intro-btns {
     margin-left: 10px;
   }
 }
 
-@media only screen and (max-width: 375px) {
-}
+@media only screen and (max-width: 375px) {}
+
 @media only screen and (max-width: 330px) {
   .intro-page {
     padding-bottom: 50px;
@@ -439,9 +513,11 @@
     height: 45px;
     margin: 10px 10px !important;
   }
+
   .intro-left p {
     margin-bottom: 10px !important;
   }
+
   .intro-img {
     width: 100% !important;
   }
@@ -454,18 +530,22 @@
   background: #d6d6d6;
   transition: all 0.5s ease;
 }
+
 .light .intro-links i:hover {
   background: var(--color-button);
 }
+
 .light .name {
   font-size: 3.5rem;
 }
+
 .light .intro-left .job {
   background: var(--color-button);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .light .intro-name .hello {
   color: #fb7878 !important;
   background: var(--color-button);
@@ -477,9 +557,11 @@
 .light .my-cv:hover {
   color: #d6d6d6 !important;
 }
+
 .light .contact-me {
   background: var(--btn-background) !important;
 }
+
 .light .contact-me:hover {
   background: var(--color-button) !important;
   color: #222222 !important;
@@ -491,15 +573,18 @@
   margin-bottom: 20px;
   color: #2d2170 !important;
 }
+
 .light .intro-left .icon-link i {
   border: none;
   background: rgb(223, 223, 223);
   font-size: 15px;
   color: #2d2170;
 }
+
 .light .intro-contact span {
   color: #020222 !important;
 }
+
 .light .intro-page::after {
   background: none !important;
   opacity: 0.2;

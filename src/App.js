@@ -44,11 +44,12 @@ function App() {
           <Home />
         </div>
         <AboutMe />
+        <Projects />
         <Services />
         <Progress />
-        <Projects />
-        <ContactMe />
-        <Email />
+
+        {/*         <ContactMe />
+        <Email /> */}
         <Footer />
       </BrowserRouter>
     </>

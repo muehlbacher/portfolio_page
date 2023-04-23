@@ -5,6 +5,9 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import $ from "jquery";
 
+import python_img from "../../images/icons8-python-50_1.png";
+
+
 var nav = $("body");
 
 if (nav.length) {
@@ -27,6 +30,8 @@ if (nav.length) {
 }
 
 const Progress = () => {
+  const img_300 = "https://drive.google.com/uc?id=";
+
   const { data: langIcons, isFetching } = useGetLanguagesIconsQuery();
 
   const [icons, setIcons] = useState(langIcons);
@@ -79,7 +84,7 @@ const Progress = () => {
   });
   return (
     <>
-      <section id="skills">
+      <section id="skills" className="skills-page">
         <div className="progress-container">
           <div className="progress-title">
             <h2>My Skills Progress so far</h2>

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const Services = () => {
   const { data: services, isFetching } = useGetServicesQuery();
   const [servicesDetails, setServicesDetails] = useState(services);
-  const img_300 = "http://drive.google.com/uc?id=";
+  const img_300 = "https://drive.google.com/uc?id=";
 
   useEffect(() => {
     setServicesDetails(services);
@@ -15,7 +15,7 @@ const Services = () => {
 
   return (
     <>
-      <section id="services">
+      <section id="services" className="service-page">
         <div className="service-container">
           <div className="service-title">
             <h2>What Service i Offer you</h2>

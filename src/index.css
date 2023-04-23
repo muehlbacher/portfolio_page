@@ -3,12 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600;1,700;1,800&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600&display=swap");
+
 /* ------------ROOT VARIABLES----------------- */
 
 :root {
   --grey-light: #f2f7f9;
   --grey: #ecedf3;
   --color-white: #fff;
+  --color-gold: #8E793E;
   --color-second-title: #fff;
   --color-info-dark: #7d8da1;
   --color-info-light: #dce1eb;
@@ -16,13 +19,18 @@
   --color-light: rgba(132, 139, 200, 0.18);
   --color-primary-variant: #111e88;
   --color-dark-variant: #677483;
-  --color-background: #0d012c;
+  /* --color-background: #0d012c; */
+  --color-background: black;
   --color-title: #2196f3;
-  --color-card2: #14143a;
+  /* --color-card2: #14143a; */
+  --color-card2: #0B0B0B;
 
-  --color-button: linear-gradient(to left, #17c0e9, #c96ddd, #f45162);
+  /* --color-button: linear-gradient(to left, #17c0e9, #c96ddd, #f45162); */
+
+  --color-button: linear-gradient(to left, #EAEAEA, #AD974F, #8E793E);
   --color-special-color: #eff30e;
-  --color-button-hover: #59c378;
+  --color-button-hover: #8E793E;
+  --color-hero-name: #8E793E;
 
   --color-background-2: #0d012c;
   --color-icon-background: #464a68;
@@ -41,6 +49,7 @@
   --card-box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%) !important;
   --card-box-shadow-hover: 0px 30px 60px 0px rgb(0 0 0 / 10%) !important;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -51,14 +60,16 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 html {
   font-size: 14px;
 }
+
 body {
   scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
-  font-family: poppins, sans-serif !important;
+  font-family: "Source Code Pro", poppins, sans-serif !important;
   background: var(--color-background) !important;
   user-select: none;
   font-size: 0.88rem;
@@ -70,13 +81,16 @@ a {
   color: var(--color-white);
   text-decoration: none !important;
 }
+
 img {
   display: block;
   width: 100%;
 }
+
 button {
   outline: none !important;
 }
+
 h1 {
   font-family: "Playfair Display", serif !important;
   font-size: 11vw;
@@ -88,39 +102,49 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 h2 {
   font-size: 1.4rem;
-  color: #59c378 !important;
+  /* color: #59c378 !important; */
+  color: var(--color-gold) !important;
 }
 
 h3 {
   font-size: 0.87rem;
 }
+
 h4 {
   font-size: 0.8rem;
 }
+
 h5 {
   font-size: 0.77rem;
 }
+
 p {
   color: #ccc !important;
 }
+
 small {
   font-size: 0.75rem;
 }
-section > div {
+
+section>div {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 @media only screen and (max-width: 450px) {
   h3 {
     width: 20px !important;
     font-size: 1.5rem !important;
   }
 }
+
 .owl-dots {
   display: flex !important;
 }
+
 .owl-dot span {
   width: 20px !important;
   height: 3px !important;
@@ -130,6 +154,7 @@ section > div {
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
+
 .owl-dot.active span,
 .owl-dot:hover span {
   background: var(--color-button-hover) !important;
@@ -149,26 +174,20 @@ section > div {
   --color-dark-variant: #677483;
   --color-background: #f0f1f7;
   --color-title: #050748 !important;
-  --color-button: linear-gradient(
-    to right,
-    #fb7878 0%,
-    #ffaf74 100%
-  ) !important;
-  --btn-background: linear-gradient(
-    90deg,
-    rgba(194, 120, 251, 1) 0%,
-    rgba(249, 115, 255, 1) 100%
-  );
+  --color-button: linear-gradient(to right,
+      #fb7878 0%,
+      #ffaf74 100%) !important;
+  --btn-background: linear-gradient(90deg,
+      rgba(194, 120, 251, 1) 0%,
+      rgba(249, 115, 255, 1) 100%);
   --color-special-color: var(--color-title);
   --color-background-2: var(--color-background);
   --color-icon-background: #464a68;
   --color-card-background: #ffffff;
   --color-bars: linear-gradient(to right, #673ab7 0, #2196f3 100%);
-  --color-button-hover: linear-gradient(
-    to right,
-    #fb7878 0%,
-    #ffaf74 100%
-  ) !important;
+  --color-button-hover: linear-gradient(to right,
+      #fb7878 0%,
+      #ffaf74 100%) !important;
   --color-card2: #ffffff;
   --card-border-radius: 2rem;
   --border-radius-1: 0.4rem;
@@ -181,6 +200,7 @@ section > div {
   --card-box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%) !important;
   --card-box-shadow-hover: 0px 30px 60px 0px rgb(0 0 0 / 10%) !important;
 }
+
 .light h2 {
   font-weight: 500 !important;
 }
@@ -189,12 +209,15 @@ section > div {
   color: #4c4c63 !important;
   line-height: 22px !important;
 }
+
 .light button {
   box-shadow: 5px 5px 30px 0px rgb(195 120 251 / 35%);
 }
+
 .light h3 {
   font-weight: 700 !important;
 }
+
 .light h2 {
   color: var(--color-second-title) !important;
 }
@@ -213,6 +236,7 @@ section > div {
   overflow: hidden;
   background: #0d0d14 !important;
 }
+
 .name-load {
   color: #fff !important;
   font-family: helvetica, arial, sans-serif;
@@ -224,15 +248,14 @@ section > div {
   font-size: 13px;
   letter-spacing: 8px;
 }
+
 .animate-charcter {
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -249,6 +272,7 @@ section > div {
     background-position: 200% center;
   }
 }
+
 #preloader:before {
   content: "";
   position: fixed;
@@ -262,18 +286,22 @@ section > div {
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
+
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes animate-preloader {
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }

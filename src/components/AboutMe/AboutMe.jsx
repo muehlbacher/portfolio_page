@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import decor1 from "../../images/decoration/dots-1.png";
 import reactagle from "../../images/decoration/Rectangle-7.png";
 import shady from "../../images/decoration/dots.png";
+import $ from "jquery";
+
 
 const AboutMe = () => {
   const { data: aboutData, isFetching } = useGetAboutMeQuery();
@@ -39,20 +41,21 @@ const AboutMe = () => {
                 </div>
               </div>
               <div className="abouMe-row">
-                <div
+                {/*  <div
                   className=" col-lg-6 col-md-5 col-sm-12 about-img"
                   data-aos="fade-up-right"
                 >
                   <img src={`${img_300}${details.about_avatar}`} alt="" />
-                </div>
+                </div> */}
+
                 <div
-                  className=" col-lg-6 col-md-7  col-sm-12 about_myinfo"
+                  className=" col-lg-12 col-md-12  col-sm-12 about_myinfo"
                   data-aos="fade-up-left"
                 >
-                  <div className="title">
+                  {/*                   <div className="title">
                     <h2>{details.title}</h2>
                     <h3>{details.title_2}</h3>
-                  </div>
+                  </div> */}
                   <div className="about-description">
                     <div id="foo" unselectable="on" class="unselectable">
                       <div
@@ -64,7 +67,7 @@ const AboutMe = () => {
                   </div>
 
                   <div className="itscv">
-                    <a
+                    {/*                     <a
                       href="https://drive.google.com/file/d/127RCSy1lUZE2sS8IgkxxPcUqbw1rYMOR/view"
                       download="RESUME.pdf"
                       target="_blank"
@@ -72,6 +75,15 @@ const AboutMe = () => {
                     >
                       <button className="download-cv">
                         Download Cv <i class="bx bx-download"></i>
+                      </button>
+                    </a> */}
+                    <a
+                      href={`mailto:${details.about_avatar}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="download-cv">
+                        contact me <i class="bx bx-send"></i>
                       </button>
                     </a>
                   </div>

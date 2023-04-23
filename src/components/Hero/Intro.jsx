@@ -27,7 +27,7 @@ const Intro = () => {
     <>
       {homeDetails &&
         homeDetails.map((detail) => (
-          <section className=" intro-page" id="home" key={detail.id}>
+          <section className="intro-page" id="home" key={detail.id}>
             <div className="decorations">
               <div className="decor-dot2">
                 <img src={decor3} alt="" />
@@ -37,7 +37,7 @@ const Intro = () => {
             </div>
             <div className="small-intro">
               <div className="intro-row">
-                <div className="col-lg-5  col-md-6 col-sm-12 intro-left">
+                <div className="col-lg-7  col-md-7 col-sm-12 intro-left">
                   <div className="intro-name">
                     <h3
                       className="hello"
@@ -51,7 +51,7 @@ const Intro = () => {
                       data-aos="fade-down"
                       data-aos-duration="1600"
                     >
-                      Hey! I Am
+                      {/* Hey! I Am */}
                     </h3>
                     <h3
                       className="job  text-animate"
@@ -69,7 +69,7 @@ const Intro = () => {
                     </p>
                   </div>
                   <div
-                    className="intro-btns"
+                    // className="intro-btns"
                     data-aos="fade-up"
                     data-aos-duration="1900"
                   >
@@ -78,7 +78,7 @@ const Intro = () => {
                       className="contactMe"
                     >
                       <button className="contact-me">
-                        Hire me <i class="bx bx-send "></i>
+                        contact <i class="bx bx-send "></i>
                       </button>
                     </a>
                   </div>
@@ -106,23 +106,38 @@ const Intro = () => {
                     </ul>
                   </div>
                 </div>
-                <div
-                  className="col-lg-7 col-md-6 col-sm-12 left-img "
-                  data-aos="fade-down-left"
+                {/* <div
+                  className=" col-lg-6 col-md-7  col-sm-12 about_myinfo"
+                  data-aos="fade-up-left"
                 >
-                  <div className="ff">
-                    {/* <img
-                      className="intro-img"
-                      src="https://drive.google.com/uc?id=1iyVyaGyw5HniEugxd1-qZ54rpFpn2UTc"
-                      alt=""
-                    /> */}
-                    <img
-                      className="intro-img"
-                      src={`${img_300}${detail.avatar_img}`}
-                      alt=""
-                    />
+                  <div className="title">
+                    <h2>{detail.title}</h2>
+                    <h3>{detail.title_2}</h3>
                   </div>
-                </div>
+                  <div className="about-description">
+                    <div id="foo" unselectable="on" class="unselectable">
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: `${detail.description_one}`,
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="itscv">
+                    <a
+                      href="https://drive.google.com/file/d/127RCSy1lUZE2sS8IgkxxPcUqbw1rYMOR/view"
+                      download="RESUME.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="download-cv">
+                        Download Cv <i class="bx bx-download"></i>
+                      </button>
+                    </a>
+                  </div>
+                </div> */}
+
               </div>
             </div>
           </section>

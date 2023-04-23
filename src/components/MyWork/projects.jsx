@@ -8,7 +8,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Projects = () => {
   const { data: projects, isFetching } = useGetProjectsQuery();
-  const img_300 = "http://drive.google.com/uc?id=";
+  const img_300 = "https://drive.google.com/uc?id=";
 
   const options = {
     margin: 30,
@@ -55,9 +55,9 @@ const Projects = () => {
   return (
     <div className="mywork " id="work">
       <div className="mywork-title">
-        <h2>Check Out My Reacet Projects</h2>
+        <h2>check out my recent projects</h2>
 
-        <h3>My Work</h3>
+        <h3>my work</h3>
       </div>
       <div className="project-row">
         {projectsDetails?.length && (

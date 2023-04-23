@@ -16,6 +16,9 @@ class HomeDetails(models.Model):
                                   verbose_name="Google Drive Image Id")
     hireMe_link = models.CharField(max_length=200, blank=True, null=True)
     cv_link = models.URLField(blank=True, null=True)
+    description_one = RichTextField(blank=True, null=True)
+    title = models.CharField(max_length=20, blank=True, null=True)
+    title_2 = models.CharField(max_length=100, blank=True, null=True)
 
     class Meta:
         verbose_name_plural = 'Heros Section'

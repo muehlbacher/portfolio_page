@@ -5,13 +5,15 @@
   position: relative;
   padding: 50px 40px 20px 40px;
   margin: auto;
-  background: var(--color-background-2);
+  background: var(--color-background);
 }
+
 .reachme-container .row {
   display: flex !important;
   justify-content: flex-start;
   margin: auto;
 }
+
 .email-me input {
   width: 100%;
   margin-bottom: 10px;
@@ -22,6 +24,7 @@
   text-indent: 20px;
   color: #ffffff;
 }
+
 .email-me textarea {
   width: 100%;
   background: var(--color-card2);
@@ -31,9 +34,11 @@
   color: #ffffff;
   padding-top: 20px;
 }
+
 .hire-me-title h2 {
   font-size: 1.2rem;
 }
+
 .hire-btn {
   height: 50px;
   width: 150px;
@@ -42,14 +47,17 @@
   font-size: 15px;
   margin-top: 30px;
 }
+
 .reachme-title {
   width: 100%;
 }
+
 .reachme-title2 {
   text-align: center;
   margin: auto;
   max-width: 450px;
 }
+
 .reachme-title2 h3 {
   text-align: center;
   font-size: 2.6rem;
@@ -59,18 +67,22 @@
 .reachme-title2 h2 {
   font-size: 15px;
 }
+
 .reachme-title .row {
   margin-top: 20px;
 }
+
 .reachme-title h2 {
   font-size: 1.8rem;
 }
+
 .reachme-title p {
   font-size: 15px;
   line-height: 30px;
 }
-.contact-info {
-}
+
+.contact-info {}
+
 .contact-info {
   display: flex;
   cursor: pointer;
@@ -88,23 +100,28 @@
   justify-content: space-around;
   margin-right: 30px;
 }
+
 .contact-mi {
   margin-left: 10px;
   margin-top: 10px;
 }
+
 .email-me {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .contact-mi p {
   font-size: 14px;
 }
+
 .contact-mi h4 {
   margin-bottom: 0;
   padding-bottom: 0;
   font-size: 1.3rem;
 }
+
 .contact-info i {
   margin-bottom: 10px;
   font-size: 27px;
@@ -118,14 +135,17 @@
   border-radius: 150px;
   margin-right: 20px;
 }
+
 .contact-info:nth-child(1) i {
   color: #f06a6a !important;
   background: #fcdcdc;
 }
+
 .contact-info:nth-child(2) i {
   color: #6ecc21 !important;
   background: #ddf5e6;
 }
+
 .contact-info:nth-child(3) i {
   color: #8b71e9 !important;
   background: #ddd6fa;
@@ -135,26 +155,32 @@
   .reachme-title .row {
     justify-content: center;
   }
+
   .reachme-title h2 {
     text-align: center;
   }
+
   .reachme-title p {
     text-align: center;
   }
 }
+
 @media only screen and (max-width: 550px) {
   .email-me {
     padding: 0px !important;
   }
+
   .reachme-container {
     padding: 10px;
   }
 }
-.light .contact-info {
-}
+
+.light .contact-info {}
+
 .light .email-me input {
   color: #000000;
 }
+
 .light .email-me textarea {
   color: #000000;
 }
