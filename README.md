@@ -1,16 +1,14 @@
-# ReactDjangoPortfolio
+# Portfolio Page
 
-####  Props: I used the project https://github.com/tech-jamara/DjangoReactPortfolio as template for my Portfolio Page
+This page was build using React and Django.
+The page runs on an virtual linux server with nginx, uwsgi and Django
 
-I changed the appearance of the site and made i dockerable.
 
 You can have a look at my Portfoliopage at:
-https://dominik.muehlbacher.at
+https://dominikmuehlbacher.at
 
 
-
-
-## To Use the page for yourself: Run these Commads
+## To Use the page for yourself: Run these Commands
 
  These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Step 1:Clone the repository
@@ -19,7 +17,7 @@ https://dominik.muehlbacher.at
      cd your_path/DjangoReactPortfolio
 ### Step 3: Install Node.js dependencies:
      npm install 
-### Step 4: Install docker:
+### Step 4: Install Docker:
      depending on your system, have a look here:
      https://docs.docker.com/engine/install/
 ### Step 4:
@@ -31,3 +29,5 @@ https://dominik.muehlbacher.at
 ###
 ###
 
+
+####  Props: I used the project https://github.com/tech-jamara/DjangoReactPortfolio as template for my Portfolio Page. Please have a look at his work. 
