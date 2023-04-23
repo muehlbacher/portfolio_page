@@ -1,5 +1,7 @@
 # Portfolio Page
 
+### BLOG: How to host your page: https://medium.com/@muehlbacher.dominik
+
 This page was build using React and Django.
 The page runs on an virtual linux server with nginx, uwsgi and Django
 
