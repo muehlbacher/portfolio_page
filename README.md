@@ -1,6 +1,6 @@
 # Portfolio Page
 
-### BLOG: How to host your page: https://medium.com/@muehlbacher.dominik
+### BLOG: How to host your page: https://medium.com/@muehlbacher.dominik/publish-django-application-nginx-npm-uwsgi-24ba7a107749
 
 This page was build using React and Django.
 The page runs on an virtual linux server with nginx, uwsgi and Django
